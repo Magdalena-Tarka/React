@@ -32,8 +32,11 @@ const storeReducer = combineReducers(reducers);
 
 // create store
 const store = createStore(
+  // Jedyny obowiązkowy argument to reducer, który w naszym przypadku jest połączony
   storeReducer,
+  // W drugim arg przekazujemy stan początkowy
   initialState,
+  // Trzeci arg to wyrażenie skopiowane z instrukcji implementacji pakietu redux-devtools-extension, czyli pluginu pozwalającego nam na podgląd magazynu w narzędziach developerskich przeglądarki
   window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
 );
 

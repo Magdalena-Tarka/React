@@ -21,7 +21,7 @@ class SearchResults extends React.Component {
   render() {
     const {icon, title, cards} = this.props;
     return (
-      <Container>
+      <Container className={styles.wrapper}>
         <section className={styles.component}>
           <h3 className={styles.title}>
             <span className={styles.icon}>

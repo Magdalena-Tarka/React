@@ -1,5 +1,6 @@
 export const settings = {
   logo: 'cat',
+  listCreatorText: 'Add new list',
   columnCreatorText: 'Add new column',
   cardCreatorText: 'Add new card',
   creator: {
@@ -15,7 +16,8 @@ export const settings = {
     icon: 'search',
     title: 'Search Results',
   },
-  defaultListDescription: '<p>I can do all the things!!!</p>',
+  defaultListDescription: 'I can do all the things!!!',
+  defaultListImage: 'http://uploads.kodilla.com/bootcamp/fer/11.react/space.png',
   defaultColumnIcon: 'list-alt',
 };
 
@@ -130,12 +132,6 @@ const columns = [
     listId: 'list-1',
     title: 'Games',
     icon: 'gamepad',
-  },
-  {
-    id: 'column-4',
-    listId: 'list-2',
-    title: 'Strange column',
-    icon: 'question',
   },
 ];
 

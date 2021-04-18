@@ -1,5 +1,7 @@
 import {connect} from 'react-redux';
 import Home from './Home';
+import {createActionAddList} from '../../redux/listsRedux';
+import { settings } from '../../data/dataStore';
 
 const mapStateToProps = state => ({
   title: state.app.title,
@@ -7,4 +9,11 @@ const mapStateToProps = state => ({
   lists: state.lists,
 });
 
-export default connect(mapStateToProps)(Home);
+const mapDispatchToProps = (dispatch) => ({
+  addList: title => dispatch(createActionAddList({
+    title,
+    image: settings.defaultListImage,
+  })),
+});
+
+export default connect(mapStateToProps, mapDispatchToProps)(Home);

@@ -1,5 +1,5 @@
 export const settings = {
-  logo: 'paw',
+  logo: 'cat',
   columnCreatorText: 'Add new column',
   cardCreatorText: 'Add new card',
   creator: {
@@ -10,6 +10,10 @@ export const settings = {
   search: {
     defaultText: 'Search...',
     icon: 'search',
+  },
+  searchResults: {
+    icon: 'search',
+    title: 'Search Results',
   },
   defaultListDescription: '<p>I can do all the things!!!</p>',
   defaultColumnIcon: 'list-alt',
@@ -101,7 +105,7 @@ const lists = [
     image: 'http://uploads.kodilla.com/bootcamp/fer/11.react/space.png',
   },
   {
-    id: 'list-2',
+    id: 'list-3',
     title: 'Things to read <sup>maybe...</sup>',
     description: 'Interesting things I want to find out!',
     image: 'http://uploads.kodilla.com/bootcamp/fer/11.react/space.png',
